@@ -4,7 +4,7 @@ import "./PlaceType.css";
 const PlaceType = () => {
   return (
     <div className="place-type-wrapper">
-      <div className="place-type">Airport</div>
+      <span className="place-type">Airport</span>
     </div>
   );
 };
