@@ -7,10 +7,12 @@
 .no-border {
   border-bottom: none;
 }
+
 .pick-up-list-item:hover {
   background-color: #e7f4fe;
 }
 .location-wrapper {
+  width: calc(100% - 60px);
   display: flex;
   flex-direction: column;
   font-size: 14px;
