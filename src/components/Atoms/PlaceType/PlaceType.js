@@ -1,10 +1,10 @@
 import React from "react";
 import "./PlaceType.css";
 
-const PlaceType = () => {
+const PlaceType = ({ placeType }) => {
   return (
     <div className="place-type-wrapper">
-      <span className="place-type">Airport</span>
+      <div className={`place-type ${placeType.toLowerCase()}`}>{placeType}</div>
     </div>
   );
 };
