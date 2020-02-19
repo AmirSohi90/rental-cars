@@ -1,9 +1,9 @@
 import React from "react";
 import ListItem from "../../Atoms/ListItem/ListItem";
 
-import "./ListItems.css";
+import "./LocationsList.css";
 
-const ListItems = ({ locations }) => {
+const LocationsList = ({ locations }) => {
   return (
     <div className="results-wrapper">
       <ol className="pick-up-ordered-list">
@@ -21,4 +21,4 @@ const ListItems = ({ locations }) => {
   );
 };
 
-export default ListItems;
+export default LocationsList;
