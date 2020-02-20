@@ -23,7 +23,7 @@ export const mockedUnformattedLocations = [
     city: "City 3",
     name: "Name 3",
     lat: 26741,
-    lng: 1829183
+    lng: 18291831
   }
 ];
 
@@ -41,7 +41,7 @@ export const mockedFormattedLocations = [
     region: "City 2, Country 2"
   },
   {
-    id: "267411829183",
+    id: "2674118291831",
     name: "Name 3",
     placeType: "Place",
     region: "City 3, Country 3"

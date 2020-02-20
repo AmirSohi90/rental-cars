@@ -1,9 +1,12 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import App from "./App";
+import Searchbox from "./components/Organisms/Searchbox/Searchbox";
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+import { shallow } from "enzyme";
+
+describe("App", () => {
+  it("should render the SearchBox component", () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.find(Searchbox).length).toBe(1);
+  });
 });

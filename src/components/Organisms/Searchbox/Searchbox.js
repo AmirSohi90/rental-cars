@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { getPickupLocations } from "../../../services/getPickupLocations";
-import ListItems from "../../Molecules/ListItems/ListItems";
+import LocationsList from "../../Molecules/LocationsList/LocationsList";
 import { debounce } from "lodash";
 
 import "./Searchbox.css";
@@ -16,7 +16,7 @@ class Searchbox extends Component {
       const pickupLocations = await getPickupLocations(
         this.state.locationSearch
       );
-      this.setState({ pickupLocations }, () => console.log(this.state));
+      this.setState({ pickupLocations });
     }
   }, 250);
 
@@ -43,7 +43,7 @@ class Searchbox extends Component {
                 placeholder="city, airport, station, region, district…"
               />
               {this.state.locationSearch.length > 1 && (
-                <ListItems locations={this.state.pickupLocations} />
+                <LocationsList locations={this.state.pickupLocations} />
               )}
             </div>
           </div>
